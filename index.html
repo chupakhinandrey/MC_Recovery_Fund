@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MC Recovery Fund - Trading Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">MC</div>
+                    <div class="logo-text">
+                        <h1>MC Recovery Fund</h1>
+                        <span>Trading Dashboard</span>
+                    </div>
+                </div>
+                <div class="period-info">
+                    <span class="period">10.08.2025 – 02.09.2025</span>
+                    <span class="duration">22 дня торговли</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Stats Cards -->
+        <section class="main-stats">
+            <div class="stats-grid">
+                <div class="stat-card profit">
+                    <div class="stat-icon">💰</div>
+                    <div class="stat-content">
+                        <h3>Total PnL</h3>
+                        <div class="stat-value">+$125,028</div>
+                        <div class="stat-sub">Net: $129,406</div>
+                    </div>
+                </div>
+                
+                <div class="stat-card winrate">
+                    <div class="stat-icon">🎯</div>
+                    <div class="stat-content">
+                        <h3>Win Rate</h3>
+                        <div class="stat-value">98.2%</div>
+                        <div class="stat-sub">164/167 сделок</div>
+                    </div>
+                </div>
+                
+                <div class="stat-card roi">
+                    <div class="stat-icon">📈</div>
+                    <div class="stat-content">
+                        <h3>ROI</h3>
+                        <div class="stat-value">+125.03%</div>
+                        <div class="stat-sub">$100K → $225K</div>
+                    </div>
+                </div>
+                
+                <div class="stat-card apr">
+                    <div class="stat-icon">🚀</div>
+                    <div class="stat-content">
+                        <h3>APR</h3>
+                        <div class="stat-value">2,074%</div>
+                        <div class="stat-sub">Экстраполяция</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Coins Section -->
+        <section class="coins-section">
+            <h2>Статистика по монетам</h2>
+            <div class="coins-grid">
+                <div class="coin-card btc-card">
+                    <div class="coin-header">
+                        <div class="coin-symbol">₿</div>
+                        <div class="coin-info">
+                            <h3>BTC</h3>
+                            <span class="coin-direction">Mixed (Long/Short)</span>
+                        </div>
+                    </div>
+                    <div class="coin-stats">
+                        <div class="coin-pnl">+$55,707</div>
+                        <div class="coin-meta">
+                            <div class="coin-trades">20 сделок</div>
+                            <div class="coin-winrate">95.0% WR</div>
+                        </div>
+                        <div class="coin-details">
+                            <span>Макс. нотионал: $1,993K</span>
+                            <span>Комиссии: -$1,300</span>
+                            <span>Funding: -$1,201</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="coin-card hype-card">
+                    <div class="coin-header">
+                        <div class="coin-symbol">🔥</div>
+                        <div class="coin-info">
+                            <h3>HYPE</h3>
+                            <span class="coin-direction">Long</span>
+                        </div>
+                    </div>
+                    <div class="coin-stats">
+                        <div class="coin-pnl">+$40,243</div>
+                        <div class="coin-meta">
+                            <div class="coin-trades">106 сделок</div>
+                            <div class="coin-winrate">100.0% WR</div>
+                        </div>
+                        <div class="coin-details">
+                            <span>Макс. нотионал: $368K</span>
+                            <span>Комиссии: -$167</span>
+                            <span>Funding: -$3,033</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="coin-card sol-card">
+                    <div class="coin-header">
+                        <div class="coin-symbol">◎</div>
+                        <div class="coin-info">
+                            <h3>SOL</h3>
+                            <span class="coin-direction">Short</span>
+                        </div>
+                    </div>
+                    <div class="coin-stats">
+                        <div class="coin-pnl">+$19,479</div>
+                        <div class="coin-meta">
+                            <div class="coin-trades">30 сделок</div>
+                            <div class="coin-winrate">100.0% WR</div>
+                        </div>
+                        <div class="coin-details">
+                            <span>Макс. нотионал: $706K</span>
+                            <span>Комиссии: -$117</span>
+                            <span>Funding: +$158</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="coin-card eth-card">
+                    <div class="coin-header">
+                        <div class="coin-symbol">⟠</div>
+                        <div class="coin-info">
+                            <h3>ETH</h3>
+                            <span class="coin-direction">Long</span>
+                        </div>
+                    </div>
+                    <div class="coin-stats">
+                        <div class="coin-pnl">+$9,600</div>
+                        <div class="coin-meta">
+                            <div class="coin-trades">11 сделок</div>
+                            <div class="coin-winrate">81.8% WR</div>
+                        </div>
+                        <div class="coin-details">
+                            <span>Макс. нотионал: $583K</span>
+                            <span>Комиссии: -$193</span>
+                            <span>Funding: -$303</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Charts Section -->
+        <section class="charts-section">
+            <h2>Аналитика</h2>
+            <div class="charts-grid">
+                <div class="chart-container">
+                    <div class="chart-header">
+                        <h3>Распределение PnL по монетам</h3>
+                    </div>
+                    <div class="chart-wrapper" style="position: relative; height: 350px;">
+                        <canvas id="pnlChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="chart-container">
+                    <div class="chart-header">
+                        <h3>Win Rate по монетам</h3>
+                    </div>
+                    <div class="chart-wrapper" style="position: relative; height: 350px;">
+                        <canvas id="winrateChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Summary Section -->
+        <section class="summary-section">
+            <div class="summary-card">
+                <h3>🏆 Итоговая статистика</h3>
+                <div class="summary-stats">
+                    <div class="summary-item">
+                        <span class="summary-label">Общее количество сделок:</span>
+                        <span class="summary-value">167</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-label">Успешных сделок:</span>
+                        <span class="summary-value success">164/167 (98.2%)</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-label">Убыточных сделок:</span>
+                        <span class="summary-value error">3/167 (1.8%)</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-label">Общие комиссии:</span>
+                        <span class="summary-value error">-$1,777</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-label">Общий funding:</span>
+                        <span class="summary-value error">-$4,378</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

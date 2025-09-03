@@ -1,0 +1,70 @@
+{
+  "general_stats": {
+    "period": "10.08.2025 – 02.09.2025",
+    "duration_days": 22,
+    "duration_hours": 540.4,
+    "total_pnl": 125027.86,
+    "gross_pnl": 131183.37,
+    "fees": 1777.13,
+    "net_pnl": 129406.24,
+    "funding": -4378.38,
+    "initial_deposit": 100000,
+    "current_deposit": 225027.86,
+    "roi_percent": 125.03,
+    "apr_percent": 2074.3,
+    "total_trades": 167,
+    "winning_trades": 164,
+    "losing_trades": 3,
+    "win_rate": 98.2
+  },
+  "coins": [
+    {
+      "name": "BTC",
+      "pnl": 55706.51,
+      "gross_pnl": 58207.36,
+      "fees": 1299.86,
+      "net_pnl": 56907.51,
+      "funding": -1201.0,
+      "max_notional": 1993373.49,
+      "trades": 20,
+      "win_rate": 95.0,
+      "primary_direction": "Mixed (Long/Short)"
+    },
+    {
+      "name": "HYPE",
+      "pnl": 40242.57,
+      "gross_pnl": 43442.75,
+      "fees": 167.48,
+      "net_pnl": 43275.28,
+      "funding": -3032.71,
+      "max_notional": 368203.15,
+      "trades": 106,
+      "win_rate": 100.0,
+      "primary_direction": "Long"
+    },
+    {
+      "name": "SOL",
+      "pnl": 19479.1,
+      "gross_pnl": 19438.05,
+      "fees": 116.89,
+      "net_pnl": 19321.16,
+      "funding": 157.94,
+      "max_notional": 706324.82,
+      "trades": 30,
+      "win_rate": 100.0,
+      "primary_direction": "Short"
+    },
+    {
+      "name": "ETH",
+      "pnl": 9599.69,
+      "gross_pnl": 10095.2,
+      "fees": 192.9,
+      "net_pnl": 9902.3,
+      "funding": -302.61,
+      "max_notional": 582571.69,
+      "trades": 11,
+      "win_rate": 81.8,
+      "primary_direction": "Long"
+    }
+  ]
+}
